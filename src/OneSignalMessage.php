@@ -169,6 +169,7 @@ class OneSignalMessage
         $message = [
             'contents' => ['en' => $this->body],
             'headings' => ['en' => $this->subject],
+            'android_group' => $this->android_group,
             'url' => $this->url,
             'buttons' => $this->buttons,
             'web_buttons' => $this->webButtons,
