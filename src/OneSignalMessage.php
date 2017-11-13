@@ -12,6 +12,9 @@ class OneSignalMessage
     /** @var string */
     protected $subject;
 
+    /** @var  string */
+    protected $android_group;
+
     /** @var string */
     protected $url;
 
@@ -55,6 +58,20 @@ class OneSignalMessage
     public function body($value)
     {
         $this->body = $value;
+
+        return $this;
+    }
+
+    /**
+     * Set the message android group.
+     *
+     * @param string $value
+     *
+     * @return $this
+     */
+    public function androidGroup($value)
+    {
+        $this->android_group = $value;
 
         return $this;
     }
